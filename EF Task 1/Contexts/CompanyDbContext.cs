@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace EF_Task_1.Contexts
 {
-    public class CompanyDbContext : DbContext
-    {
-        public CompanyDbContext() : base() 
-        {
+    //public class CompanyDbContext : DbContext
+    //{
+    //    public CompanyDbContext() : base() 
+    //    {
             
-        }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("server=.; database=CompanyDbG02; trusted_connection=true; TrustServerCertificate=true;");
-        }
+    //    }
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    {
+    //        optionsBuilder.UseSqlServer("server=.; database=CompanyDbG02; trusted_connection=true; TrustServerCertificate=true;");
+    //    }
 
-        public DbSet<Employee> Employees { get; set; }
-    }
+    //    public DbSet<Employee> Employees { get; set; }
+    //}
 }
